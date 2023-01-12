@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./Componentes/navbar";
+import Nota from "./Componentes/nota.js";
+import FormNota from "./Componentes/formnota.js";
+import packageInfo from "./listaNotas.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+
+
+class App extends React.Component {
+    render() {
+
+        
+        return (
+            <div className="App">
+                <div className="container-fluid">
+                    <Navbar />
+                    <div className="col 9">
+                        <div className="wrapper">
+                            {/* Si la nota no tiene la conexion con el especilista y el tipo des especialidad, no muestra nada */}
+                            <Nota/> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -36,3 +36,218 @@
     transform: rotate(360deg);
   }
 }
+
+
+/****************************** DESDE AQUI EMPIEZA LOS STYLE DE LAS NOTAS  *******************************/
+
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100%;
+  background: linear-gradient(#A2C3CA,#CDE1E0) ;
+}
+.wrapper{
+  padding: 45px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, 265px);
+  background-color: #fff;
+  justify-content: center; /* para centrarlos*/
+}
+.wrapper li{
+  height: 250px;
+  list-style: none;
+  border-radius: 5px;
+  padding: 15px 20px 10px;
+  background: #a8bff7;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.add-box, .icon, .bottom-content, 
+.popup, header, .settings .menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-3{
+  background-color: #fff;
+  border-right: 1px solid;
+}
+.note .notasup{
+  /* background-color: aqua; */
+  display: flex;
+}
+
+.note .lugar{
+  width: 90%;
+  height: 35px;
+  font-size: 14px;
+  margin-top: 4px;
+
+}
+
+.note .sesion{
+  width: 10%;
+  font-size: 19px;
+}
+
+
+.note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note .details{
+  max-height: 200px;
+  overflow-y: visible;
+}
+/* .note .details::-webkit-scrollbar,
+.popup textarea::-webkit-scrollbar{
+  width: 0;
+}
+.note .details:hover::-webkit-scrollbar,
+.popup textarea:hover::-webkit-scrollbar{
+  width: 5px;
+} */
+.navbar{
+  background-color: rgba(240, 233, 233, 0.299);
+  border-bottom: 2px solid #ccc;
+}
+
+
+.note p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.note .cuadro{
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  width: 225px;
+  height: 80px;
+  /* HACER QUE SE CENTRE VERTICALMENTE */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height :33px;
+
+
+}
+
+.medicamentotext{
+  text-align: center;
+}
+
+.medicamentos{
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 500px;
+
+}
+
+.note .notainf{
+  margin-top: 10px;
+  text-align: center;
+}
+.note span{
+  display: block;
+  color: #575757;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.note .bottom-content{
+  margin-top: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.914);
+}
+
+/* #a8bff7 */
+
+#menu a {
+
+  font-size: 25px;
+
+  color: #00507D;
+
+
+
+
+}
+
+.bgn-nav {
+  background: linear-gradient(#F2F6F8, #cadde2);
+  height: 100%;
+
+
+  /* 
+01C7DD
+CADDE2
+F2F6F8
+6DC62B
+00507D   
+*/
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+html {
+  height: 100%;
+}
+
+
+#navbarSupportedContent{
+  display: flex !important;
+  /* background-color: aqua; */
+}
+#hola3{
+  float: right;
+}
+
+#menu  /* afecta todo el menu */ { 
+  float: center; 
+}
+
+
+
+.addnote, .icon, .bottom-content, 
+.popup, header, .settings .menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addnote{
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+}
+.addnote .icon{
+  height: 78px;
+  width: 78px;
+  color: #ffffff;
+  font-size: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  border: 2px dashed #ffffff;
+}
+.addnote p{
+  color: #000000;
+  font-weight: 500;
+  margin-top: 20px;
+}
